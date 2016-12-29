@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: hptcg_production
-  username: hptcg
-  password: <%= ENV['HPTCG_DATABASE_PASSWORD'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
