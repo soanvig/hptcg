@@ -1,0 +1,589 @@
+/* Paragraphs */
+
+.page-content p
+{
+    overflow: hidden;
+
+    margin-bottom: $bottom-space;
+
+    text-align: justify;
+    text-indent: 3em;
+}
+
+/* Headers */
+
+.header
+{
+    font-family: 'Enchanted Land';
+    font-size: 3em;
+    line-height: 1;
+
+    margin-bottom: .25em;
+
+    text-align: right;
+
+    color: $gold;
+}
+
+.header--main
+{
+    font-size: 4em;
+
+    max-width: 550px;
+    margin-right: auto;
+    margin-bottom: .65em;
+    margin-left: auto;
+
+    text-align: center;
+
+    border-bottom: 1px solid $gold-dark;
+}
+
+.header--subheader
+{
+    font-size: 2.5em;
+    color: $white;
+}
+
+/* Links */
+
+a
+{
+    transition: color .1s ease-in-out;
+    text-decoration: none;
+
+    color: $gold;
+}
+
+a:hover,
+a:focus
+{
+    color: $gold-light;
+}
+
+a.animated
+{
+    position: relative;
+}
+
+a.animated:hover,
+a.animated:focus,
+a.nohover:hover,
+a.nohover:focus
+{
+    color: $gold;
+    border: 0;
+    outline: 0;
+}
+
+a.animated::before
+{
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+
+    height: 1px;
+
+    content: '';
+    transition: all .2s ease-in-out;
+
+    background: $gold;
+}
+
+a.animated:hover::before,
+a.animated:focus::before
+{
+    right: 0;
+}
+
+/* Lists */
+
+.list--unordered,
+.list--ordered
+{
+    padding-left: 3em;
+}
+
+.list--unordered:not(.sublist),
+.list--ordered:not(.sublist)
+{
+    margin-bottom: $bottom-space;
+}
+
+.list--unordered li::before
+{
+    display: inline-block;
+
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    margin-left: -15px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: $white;
+}
+
+.list--ordered
+{
+    list-style-type: decimal;
+}
+
+/* Tables */
+
+table
+{
+    width: calc(100% + 100px);
+    margin-left: -50px;
+    margin-bottom: $bottom-space;
+
+    border-collapse: collapse;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, .15);
+}
+
+td,
+th
+{
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+
+td:first-child,
+th:first-child
+{
+    padding-left: 25px;
+}
+
+td:last-child,
+th:last-child
+{
+    padding-right: 25px;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: rgba(0, 0, 0, .2);
+}
+
+/* Figures */
+
+.figure
+{
+    margin: .5em 2em;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, .15);
+}
+
+.figure--nobg
+{
+    background: transparent;
+}
+
+.figure--center
+{
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;}
+
+.figure--center .figure__item
+{
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.figure--left
+{
+    float: left;
+    margin-left: 0;
+}
+
+.figure--right
+{
+    float: right;
+
+    margin-right: 0;
+}
+
+.figure__item
+{
+    display: block;
+
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.figure__caption
+{
+    font-size: .8em;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+/* Article */
+
+.parchment
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 717px;
+    margin: calc(100px + #{$bottom-space} * 2) auto;
+    padding: 0 15% 1% 15%;
+
+    color: $dark-brown;
+    background: url('parchment-center.png') repeat-y;
+    background-size: 100% auto;
+}
+
+.parchment::before,
+.parchment::after
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    height: 100px;
+
+    content: '';
+}
+
+.parchment::before
+{
+    top: -100px;
+
+    background: url('parchment-top.png') no-repeat center bottom;
+    background-size: 100% auto;
+}
+
+.parchment::after
+{
+    bottom: -100px;
+
+    background: url('parchment-bottom.png') no-repeat center top;
+    background-size: 100% auto;
+}
+
+.header.parchment__header
+{
+    text-align: center;
+
+    color: $dark-brown;
+}
+
+.parchment__signature
+{
+    font: 1.6em 'Enchanted Land';
+    font-style: italic;
+
+    display: block;
+
+    text-align: right;
+
+    color: $light-brown;
+}
+
+.parchment a
+{
+    color: inherit;
+    border-bottom: 1px dashed $dark-brown;
+}
+
+.parchment a:focus,
+.parchment a:hover
+{
+    color: $light-brown;
+    border-bottom: 1px solid $light-brown;
+}
+
+/* Gallery */
+
+.gallery
+{
+    display: flex;
+
+    margin-bottom: $bottom-space;
+    padding: 20px;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.gallery__item
+{
+    margin: 15px;
+
+    text-align: center;
+}
+
+.gallery__image
+{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+
+/* Forms */
+
+.form
+{
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto $bottom-space auto;
+}
+
+.form legend
+{
+    font: 2.2em 'Enchanted Land';
+
+    width: 50%;
+    margin: 25px 25%;
+
+    text-align: center;
+
+    color: $gold;
+}
+
+.form fieldset
+{
+    border: 0;
+    border-top: 1px solid $gold-dark;
+}
+
+.form__group
+{
+    width: 100%;
+    margin-bottom: $bottom-space;
+}
+
+.form__label
+{
+    font-size: .9em;
+
+    display: block;
+
+    width: 100%;
+    padding: 5px 15px;
+
+    border-bottom: 1px solid $gold-dark;
+}
+
+.form__label.required
+{
+    position: relative;
+}
+
+.form__label.required::after
+{
+    content: '*';
+    right: 15px;
+    top: 15%;
+    position: absolute;
+}
+
+.form__text,
+.form__textarea
+{
+    display: block;
+
+    width: 100%;
+    padding: 5px 15px;
+
+    resize: none;
+
+    color: $white;
+    border: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+.form__submit
+{
+    display: block;
+
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 10px 25px;
+
+    text-align: center;
+
+    border: 1px solid $gold-dark;
+    background: rgba(0, 0, 0, .3);
+    color: $white;
+    cursor: pointer;
+}
+
+.form__submit,
+.form__textarea,
+.form__text
+{
+    transition: all 0.2s ease-in-out;
+}
+
+.form__submit:hover,
+.form__submit:focus,
+.form__textarea:focus,
+.form__text:focus
+{
+    background: rgba(25, 15, 10, .5);
+}
+
+.form__checkbox
+{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+.form__checkbox + label
+{
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.form__checkbox:focus + label
+{
+    color: $gold-dark;
+}
+
+.form__checkbox + label::before
+{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $gold-dark;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+    background: rgba(0, 0, 0, 0.3);
+    top: 7px;
+}
+
+.form__checkbox:checked + label::before
+{
+    border-width: 10px;
+}
+
+.form__checkbox + label::after
+{
+    content: '\0000D7';
+    color: $white;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.form__checkbox:checked + label::after
+{
+    opacity: 1;
+}
+
+/* Icons */
+
+.icon
+{
+    font-size: 0px;
+}
+
+.icon::before
+{
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    margin-bottom: -2px;
+    content: '';
+}
+
+.icon--l-c::before, .icon--l-t::before, .icon--l-ch::before, .icon--l-p::before, .icon--l-q::before,
+.icon--r-p::before, .icon--r-r::before, .icon--r-u::before, .icon--r-c::before
+{
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: no-repeat center center;
+    background-size: contain;
+}
+
+.icon--r-p::before, .icon--r-r::before, .icon--r-u::before, .icon--r-c::before
+{
+    background-size: auto;
+}
+
+.icon--l-c::before
+{
+    background-image: url('lesson-care.gif');
+}
+
+.icon--l-t::before
+{
+    background-image: url('lesson-transfiguration.gif');
+}
+
+.icon--l-ch::before
+{
+    background-image: url('lesson-charms.gif');
+}
+
+.icon--l-p::before
+{
+    background-image: url('lesson-potions.gif');
+}
+
+.icon--l-q::before
+{
+    background-image: url('lesson-quidditch.gif');
+}
+
+.icon--r-p::before
+{
+    background-image: url('rarity-premium.gif');
+}
+
+.icon--r-r::before
+{
+    background-image: url('rarity-rare.gif');
+}
+
+.icon--r-u::before
+{
+    background-image: url('rarity-uncommon.gif');
+}
+
+.icon--r-c::before
+{
+    background-image: url('rarity-common.gif');
+}

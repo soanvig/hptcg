@@ -1,0 +1,36 @@
+<h2 class="header header--main">Kontakt</h2>
+<p class="no-indent">Jeśli jesteś zainteresowany współpracą, masz pytanie odnośnie gry Harry Potter TCG czy witryny, lub jeśli napotkałeś jakiś problem - pisz śmiało! Poniżej znajduje się formularz kontaktowy, z którego możesz skorzystać. Pola oznaczone gwiazdką są obowiązkowe.</p>
+<form class="form">
+    <fieldset>
+        <legend>Formularz kontaktowy</legend>
+        <div class="row">
+            <div class="col-6 m-r-25">
+                <div class="form__group">
+                    <label class="form__label" for="emailName">Imię</label>
+                    <input class="form__text" id="emailName" name="emailName" type="text" />
+                </div>
+            </div>
+            <div class="auto">
+                <div class="form__group"><span class="form__label m-b-5">Płeć</span>
+                    <input class="form__checkbox" id="emailGenderM" name="emailGender" type="radio" value="M" />
+                    <label class="inline m-r-15" for="emailGenderM">M</label>
+                    <input class="form__checkbox" id="emailGenderF" name="emailGender" type="radio" value="F" />
+                    <label class="inline" for="emailGenderF">K</label>
+                </div>
+            </div>
+        </div>
+        <div class="form__group">
+            <label class="required form__label" for="emailEmail">E-mail</label>
+            <input class="form__text" id="emailEmail" name="emailEmail" type="email" />
+        </div>
+        <div class="form__group">
+            <label class="required form__label" for="emailSubject">Temat</label>
+            <input class="form__text" id="emailSubject" name="emailSubject" type="text" />
+        </div>
+        <div class="form__group">
+            <label class="required form__label" for="emailMessage">Wiadomość</label>
+            <textarea class="form__textarea" id="emailMessage" name="emailMessage" rows="4"></textarea>
+        </div>
+        <button class="form__submit" type="submit">Wyślij</button>
+    </fieldset>
+</form>

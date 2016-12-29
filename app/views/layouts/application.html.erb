@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ulica Pokątna - Strona Główna</title>
+        <link href="main.min.css" rel="stylesheet">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body class="page-body <%= 'start-page' if @page == 'index' %>">
+        <header class="page-header">
+            <h1 class="page-title <%= 'visuallyhidden' if @page != 'index' %>"><a class="nohover" href="/"><span class="block">Ulica</span><span class="block">Pokątna</span></a></h1>
+            <div class="page-bar">
+                <p class="page-subtitle"><span class="block text-smaller">Harry Potter</span><span class="block">Trading Card Game</span>
+                </p>
+                <nav class="menu__wrapper">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="/">Strona główna</a>
+                        </li>
+                        <li class="menu__item"><a href="/game">Gra</a>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="/description">Opis gry</a>
+                                </li>
+                                <li class="submenu__item"><a href="/extensions">Dodatki</a>
+                                </li>
+                                <li class="submenu__item"><a href="/rules">Zasady</a>
+                                </li>
+                                <li class="submenu__item"><a href="/cardlist">Spis kart</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="/community">Społeczność</a>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a href="/trade">Handel</a>
+                                </li>
+                                <li class="submenu__item"><a href="/forum">Forum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="/contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <%= yield %>
+
+            <footer class="page-footer text--smallest p-t-15">
+                <p class="no-indent text--center text--smaller m-b-5">Copyright Schizohatter, 2016</p>
+                <p class="text--smallest no-indent text--center m-b-10">Nazwa <span class="italic">Harry Potter Trading Card Game</span> jest znakiem handlowym Wizards of the Coast.
+                    <br>Nazwa <span class="italic">Ulica Pokątna</span> jest znakiem handlowym J.K. Rowling oraz Warner Bros. Entertainment Inc.</p>
+                <p class="no-indent text--smallest m-b-10 text--center">Część materiałów na tej stronie pochodzi z lub jest wzorowana na materiałach ze strony <a href="http://tcg-harry-potter.republika.pl/">http://tcg-harry-potter.republika.pl</a>, która jest <span class="underline">nieaktywna od kilku lat</span>.</p>
+            </footer>
+        </main>
+
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <script src="main.min.js"></script>
+    </body>
+</html>

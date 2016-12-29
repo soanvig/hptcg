@@ -1,0 +1,92 @@
+.block
+{
+	display: block !important;
+}
+
+.inline
+{
+	display: inline-block !important;
+}
+
+.auto
+{
+	overflow: auto !important;
+}
+
+.italic
+{
+	font-style: italic !important;
+}
+
+.bold
+{
+	font-weight: bold !important;
+}
+
+.underline
+{
+	text-decoration: underline !important;
+}
+
+.text--smaller
+{
+	font-size: 0.9em !important;
+}
+
+.text--smallest
+{
+	font-size: 0.8em !important;
+}
+
+.text--center
+{
+	text-align: center !important;
+}
+
+.no-indent
+{
+	text-indent: 0 !important;
+}
+
+.bg-light-black
+{
+	background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+@each $key, $type in (t: top, r: right, b: bottom, l: left)  {
+	$i: 0;
+	@while $i < 50
+	{
+		.m-#{$key}-#{$i} { margin-#{$type}: 1px * $i !important; }
+		.p-#{$key}-#{$i} { padding-#{$type}: 1px * $i !important; }
+
+		$i: $i + 5;
+	}
+}
+
+.row
+{
+	overflow: hidden;
+}
+
+$i: 1;
+@while $i < 11
+{
+	.col-#{$i} { width: calc(#{$i} * 10%); float: left; }
+	$i: $i + 1;
+}
+
+.visuallyhidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px; 
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
