@@ -51,7 +51,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # .env files
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
 
 # thin
 gem 'thin'
