@@ -45,6 +45,11 @@ body:not(.start-page) .page-header
     height: auto;
 }
 
+body:not(.start-page) .page-content
+{
+    min-height: calc(100vh - 268px - 25px - 1px);
+}
+
 @keyframes page-title
 {
     from
@@ -221,7 +226,7 @@ body:not(.start-page) .page-bar
 }
 
 .submenu a:hover::after, .submenu a:focus::after,
-.submenu a:hover::before, .submenu a:focus::before,
+.submenu a:hover::before, .submenu a:focus::before
 {
     opacity: 1;
 }
