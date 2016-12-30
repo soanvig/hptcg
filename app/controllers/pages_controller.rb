@@ -8,4 +8,8 @@ class PagesController < ApplicationController
             render :status => 404
         end
     end
+
+    def contact
+
+    end
 end

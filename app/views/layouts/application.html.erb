@@ -44,6 +44,12 @@
             </div>
         </header>
 
+        <div class="alert-box">
+            <% flash.each do |type, msg| %>
+                <%= content_tag :div, msg, class: 'alert alert--' + type, role: 'alert' %>
+            <% end %>
+        </div>
+
         <main class="page-content">
             <%= yield %>
 
