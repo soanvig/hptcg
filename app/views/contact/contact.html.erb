@@ -11,7 +11,7 @@
             <div class="col-6 m-r-25">
                 <div class="form__group">
                     <label class="form__label" for="emailName">Imię</label>
-                    <input class="form__text" id="emailName" name="email[name]" type="text" pattern=".{0}|\D{2,35}">
+                    <input class="form__text" id="emailName" name="email[name]" type="text" pattern=".{0}|\D{2,35}" placeholder=" " value="<%= @contact.name %>">
                 </div>
             </div>
             <div class="auto">
@@ -25,15 +25,15 @@
         </div>
         <div class="form__group">
             <label class="required form__label" for="emailEmail">E-mail</label>
-            <input class="form__text" id="emailEmail" name="email[email]" type="email" required>
+            <input class="form__text" id="emailEmail" name="email[email]" type="email" placeholder=" " value="<%= @contact.email %>" required>
         </div>
         <div class="form__group">
             <label class="required form__label" for="emailSubject">Temat</label>
-            <input class="form__text" id="emailSubject" name="email[subject]" type="text" pattern=".{5,50}" required>
+            <input class="form__text" id="emailSubject" name="email[subject]" type="text" pattern=".{5,50}" placeholder=" " value="<%= @contact.subject %>" required>
         </div>
         <div class="form__group">
             <label class="required form__label" for="emailMessage">Wiadomość</label>
-            <textarea class="form__textarea" id="emailMessage" name="email[message]" rows="4" pattern=".{5,1000}" required></textarea>
+            <textarea class="form__textarea" id="emailMessage" name="email[message]" rows="4" pattern=".{5,1000}" placeholder=" " required><%= @contact.message %></textarea>
         </div>
         <button class="form__submit" type="submit">Wyślij</button>
     </fieldset>
