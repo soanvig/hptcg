@@ -54,3 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # thin
 gem 'thin'
+
+# compress assets
+gem 'heroku-deflater', :group => :production
