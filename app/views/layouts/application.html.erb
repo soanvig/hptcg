@@ -2,7 +2,7 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Ulica Pokątna - Strona Główna</title>
+        <title><%= yield(:title) + ' - ' if content_for?(:title) %>Harry Potter TCG</title>
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= csrf_meta_tags %>
     </head>
