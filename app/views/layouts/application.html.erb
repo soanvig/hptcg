@@ -10,7 +10,7 @@
     <body class="page-body <%= 'start-page' if @page == 'index' %>">
         <header class="page-header">
             <h1 class="page-title <%= 'visuallyhidden' if @page != 'index' %>">
-                <a class="nohover" href="/" <%= 'tabindex="-1"' if @page != 'index' %>>
+                <a class="nohover" href="/" <%= '' if @page != 'index' %>>
                     <span class="block">Ulica</span>
                     <span class="block">Pokątna</span>
                 </a>
@@ -25,32 +25,32 @@
                         </li>
                         <li class="menu__item">
                             <a href="/o-grze">Gra</a>
-                            <ul class="submenu">
+                            <ul class="submenu" aria-expanded="false">
                                 <li class="submenu__item">
-                                    <a href="/opis-gry" tabindex="-1">Opis gry</a>
+                                    <a href="/opis-gry">Opis gry</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/jak-zaczac" tabindex="-1">Jak zacząć?</a>
+                                    <a href="/jak-zaczac">Jak zacząć?</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/dodatki" tabindex="-1">Dodatki</a>
+                                    <a href="/dodatki">Dodatki</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/zasady" tabindex="-1">Zasady</a>
+                                    <a href="/zasady">Zasady</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/kolekcjonowanie" tabindex="-1">Kolekcjonowanie</a>
+                                    <a href="/kolekcjonowanie">Kolekcjonowanie</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/spis-kart" tabindex="-1">Spis kart</a>
+                                    <a href="/spis-kart">Spis kart</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="menu__item"><a href="/spolecznosc">Społeczność</a>
-                            <ul class="submenu">
-                                <li class="submenu__item"><a href="/handel" tabindex="-1">Handel</a>
+                            <ul class="submenu" aria-expanded="false">
+                                <li class="submenu__item"><a href="/handel">Handel</a>
                                 </li>
-                                <li class="submenu__item"><a href="/forum" tabindex="-1">Forum</a>
+                                <li class="submenu__item"><a href="/forum">Forum</a>
                                 </li>
                             </ul>
                         </li>

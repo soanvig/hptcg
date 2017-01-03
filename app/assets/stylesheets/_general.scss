@@ -212,7 +212,7 @@ body:not(.start-page) .page-bar
 }
 
 .menu__item a:hover + .submenu, .menu__item a:focus + .submenu,
-.submenu:hover
+.submenu:hover, .submenu[aria-expanded="true"]
 {
     transform: scaleY(1);
 }
