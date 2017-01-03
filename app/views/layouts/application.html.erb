@@ -9,23 +9,40 @@
     </head>
     <body class="page-body <%= 'start-page' if @page == 'index' %>">
         <header class="page-header">
-            <h1 class="page-title <%= 'visuallyhidden' if @page != 'index' %>"><a class="nohover" href="/"><span class="block">Ulica</span><span class="block">Pokątna</span></a></h1>
+            <h1 class="page-title <%= 'visuallyhidden' if @page != 'index' %>">
+                <a class="nohover" href="/">
+                    <span class="block">Ulica</span>
+                    <span class="block">Pokątna</span>
+                </a>
+            </h1>
             <div class="page-bar">
                 <p class="page-subtitle"><span class="block text-smaller">Harry Potter</span><span class="block">Trading Card Game</span>
                 </p>
                 <nav class="menu__wrapper">
                     <ul class="menu">
-                        <li class="menu__item"><a href="/">Strona główna</a>
+                        <li class="menu__item">
+                            <a href="/">Strona główna</a>
                         </li>
-                        <li class="menu__item"><a href="/o-grze">Gra</a>
+                        <li class="menu__item">
+                            <a href="/o-grze">Gra</a>
                             <ul class="submenu">
-                                <li class="submenu__item"><a href="/opis-gry">Opis gry</a>
+                                <li class="submenu__item">
+                                    <a href="/opis-gry">Opis gry</a>
                                 </li>
-                                <li class="submenu__item"><a href="/dodatki">Dodatki</a>
+                                <li class="submenu__item">
+                                    <a href="/jak-zaczac">Jak zacząć?</a>
                                 </li>
-                                <li class="submenu__item"><a href="/zasady">Zasady</a>
+                                <li class="submenu__item">
+                                    <a href="/dodatki">Dodatki</a>
                                 </li>
-                                <li class="submenu__item"><a href="/spis-kart">Spis kart</a>
+                                <li class="submenu__item">
+                                    <a href="/zasady">Zasady</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="/kolekcjonowanie">Kolekcjonowanie</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="/spis-kart">Spis kart</a>
                                 </li>
                             </ul>
                         </li>

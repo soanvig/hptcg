@@ -100,3 +100,26 @@ $i: 1;
 
     border: 0;
 }
+
+.floatfix::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.block-center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-center--30
+{
+    width: 30%
+}
+
+.block-center--50
+{
+    width: 50%;
+}

@@ -185,11 +185,13 @@ tbody tr:nth-child(odd)
     text-align: center;
 
     background: rgba(0, 0, 0, .15);
+    box-shadow: 0 0 10px #000;
 }
 
 .figure--nobg
 {
     background: transparent;
+    box-shadow: 0;
 }
 
 .figure--center
@@ -197,7 +199,8 @@ tbody tr:nth-child(odd)
     width: 100%;
     max-width: 400px;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
 .figure--center .figure__item
 {
