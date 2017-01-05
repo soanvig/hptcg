@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title><%= yield(:title) + ' - ' if content_for?(:title) %>Harry Potter Trading Card Game</title>
         <meta name="description" content="Strona poświęcona grze karcianej Harry Potter Trading Card Game. Twoje kompedium wiedzy na temat i społeczność, do której możesz należeć i Ty!">
+        <meta name="robots" content="index, follow">
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= csrf_meta_tags %>
     </head>
