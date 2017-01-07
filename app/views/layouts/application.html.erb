@@ -6,19 +6,20 @@
         <meta name="description" content="Strona poświęcona grze karcianej Harry Potter Trading Card Game. Twoje kompedium wiedzy na temat i społeczność, do której możesz należeć i Ty!">
         <meta name="robots" content="index, follow">
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
         <%= csrf_meta_tags %>
     </head>
     <body class="page-body <%= 'start-page' if @page == 'index' %>">
         <header class="page-header">
-            <h1 class="page-title <%= 'visuallyhidden' if @page != 'index' %>">
+            <p class="page-title <%= 'visuallyhidden' if @page != 'index' %>">
                 <a class="nohover" href="/" <%= '' if @page != 'index' %>>
                     <span class="block">Ulica</span>
                     <span class="block">Pokątna</span>
                 </a>
-            </h1>
+            </p>
             <div class="page-bar">
-                <p class="page-subtitle"><span class="block text-smaller">Harry Potter</span><span class="block">Trading Card Game</span>
-                </p>
+                <h1 class="page-subtitle"><span class="block text-smaller">Harry Potter</span> <span class="block">Trading Card Game</span>
+                </h1>
                 <nav class="menu__wrapper">
                     <ul class="menu">
                         <li class="menu__item">
