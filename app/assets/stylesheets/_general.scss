@@ -145,6 +145,64 @@ body:not(.start-page) .page-bar
     padding: 0 160px;
 }
 
+.menu-open, .menu-close
+{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border: 2px $gold solid;
+    border-radius: 3px;
+    z-index: 190;
+    color: $gold;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-open
+{
+    box-shadow: 0 0 3px #222;
+}
+
+.menu-close
+{
+    z-index: 210;
+    right: 100vw;
+    left: auto;
+    transition: right 0.4s ease-in-out;
+    border: 0;
+}
+
+.menu-open::before
+{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: linear-gradient(
+                    to bottom,
+                    transparent 0%, transparent 13.75%,
+                    #{$gold} 13.75%, #{$gold} 28.75%,
+                    transparent 28.75%, transparent 42.5%,
+                    #{$gold} 42.5%, #{$gold} 57.5%,
+                    transparent 57.5%, transparent 71.25%,
+                    #{$gold} 71.25%, #{$gold} 86.25%,
+                    transparent 86.25%, transparent 100%
+    );
+}
+
+.menu-close::before
+{
+    content: '\0000D7';
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+}
+
 .menu__item
 {
     height: 56px;

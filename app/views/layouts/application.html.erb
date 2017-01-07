@@ -8,6 +8,7 @@
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
         <%= csrf_meta_tags %>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="page-body <%= 'start-page' if @page == 'index' %>">
         <header class="page-header">
@@ -60,6 +61,12 @@
                         </li>
                     </ul>
                 </nav>
+                <button class="menu-close" aria-hidden="true">
+                    <span class="visuallyhidden">Close menu</span>
+                </button>
+                <button class="menu-open" aria-hidden="true">
+                    <span class="visuallyhidden">Go to menu</span>
+                </button>
             </div>
         </header>
 
