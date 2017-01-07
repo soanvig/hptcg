@@ -562,8 +562,8 @@ tbody tr:nth-child(odd)
     content: '\0000D7';
     color: $white;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: -1px;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
