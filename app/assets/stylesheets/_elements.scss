@@ -326,6 +326,33 @@ tbody tr:nth-child(odd)
     border-bottom: 1px solid $light-brown;
 }
 
+.news
+{
+
+    margin-bottom: calc(#{$bottom-space} * 2);
+}
+
+.news__footer, .news__header
+{
+    text-align: right;
+}
+
+.news__datetime
+{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.news__signature
+{
+    font: italic 1.6em 'Enchanted Land';
+}
+
+.news p:last-of-type
+{
+    margin-bottom: 10px;
+}
+
 /* Gallery */
 
 .gallery
@@ -499,6 +526,11 @@ tbody tr:nth-child(odd)
     -ms-user-select: none;
     user-select: none;
     transition: color 0.2s ease-in-out;
+    line-height: 1;
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .form__checkbox:focus + label
@@ -518,7 +550,6 @@ tbody tr:nth-child(odd)
     border-radius: 3px;
     transition: all 0.3s linear;
     background: rgba(0, 0, 0, 0.3);
-    top: 7px;
 }
 
 .form__checkbox:checked + label::before
@@ -532,7 +563,7 @@ tbody tr:nth-child(odd)
     color: $white;
     position: absolute;
     left: 0;
-    top: -4px;
+    top: 0;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -541,6 +572,7 @@ tbody tr:nth-child(odd)
     height: 20px;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    line-height: 1;
 }
 
 .form__checkbox:checked + label::after
@@ -646,7 +678,7 @@ tbody tr:nth-child(odd)
     background: rgba(30, 100, 30, 0.75);
 }
 
-.alert--error
+.alert--error, .alert--alert
 {
     background: rgba(90, 30, 30, 0.75);
 }
@@ -654,4 +686,9 @@ tbody tr:nth-child(odd)
 .alert--warning
 {
     background: rgba(70, 50, 30, 0.75);
+}
+
+.alert--notice
+{
+    background: rgba(40, 90, 170, 0.75);
 }
