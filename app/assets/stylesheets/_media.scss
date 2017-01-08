@@ -31,8 +31,21 @@
     }
 }
 
+@media (max-width: 850px)
+{
+    .page-content::before,
+    .page-content::after
+    {
+        display: none;
+    }
+}
+
 @media (max-width: 600px)
 {
+    .menu-open, .menu-close
+    {
+        display: block;
+    }
     .page-body
     {
         font-size: 14px;
