@@ -55,10 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # thin
 gem 'thin'
 
-# forum
-gem 'thredded', '~> 0.9.3'
-gem 'devise'
-gem 'rails-i18n'
+
 
 group :production do
   gem 'therubyracer'
