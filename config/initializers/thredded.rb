@@ -81,7 +81,7 @@ Thredded.layout = 'application'
 
 # ==> User autocompletion (Private messages and @-mentions)
 # Thredded.autocomplete_min_length = 2 lower to 1 if have 1-letter names -- increase if you want
-
+Thredded.autocomplete_min_length = 1
 # ==> Error Handling
 # By default Thredded just renders a flash alert on errors such as Topic not found, or Login required.
 # Below is an example of overriding the default behavior on LoginRequired:
@@ -132,7 +132,7 @@ Thredded.layout = 'application'
 # Thredded.notifiers = [Thredded::EmailNotifier.new]
 #
 # none:
-# Thredded.notifiers = []
+Thredded.notifiers = []
 #
 # add in (must install separate gem (under development) as well):
 # Thredded.notifiers = [Thredded::EmailNotifier.new, Thredded::PushoverNotifier.new(ENV['PUSHOVER_APP_ID'])]
