@@ -23,7 +23,7 @@ pl:
         update_btn_submitting: :thredded.form.update_btn_submitting
       index:
         page_title: Tablice
-      last_updated_by_html: Updated %{time_ago} <cite>by %{user}</cite>
+      last_updated_by_html: Zaktualizowano %{time_ago} <cite>przez %{user}</cite>
       topics_and_posts_counts: "%{topics_count} tematów / %{posts_count} postów"
       update: :thredded.form.update
       updated_notice: Tablica została zaktualizowana
