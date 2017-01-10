@@ -233,3 +233,15 @@
     display: block;
     margin-top: 15px;
 }
+
+.thredded--topic-header--follow-info form
+{
+    position: static !important;
+    display: block;
+}
+
+.thredded--topic-header
+{
+    border-bottom: 1px solid $gold-dark;
+    padding-bottom: 1rem;
+}
