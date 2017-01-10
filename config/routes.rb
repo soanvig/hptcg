@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+    devise_for :users, :controllers => { registrations: 'registrations' }
     root 'pages#show', page: 'index'
+    mount Thredded::Engine => '/forum'
+
     get '/kontakt'          => 'contact#form'
     post '/kontakt'         => 'contact#mail'
     get '/spis-kart'        => 'pages#show', page: 'cardlist'

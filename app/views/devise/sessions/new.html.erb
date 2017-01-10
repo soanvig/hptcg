@@ -1,0 +1,27 @@
+<% content_for :title do %>
+    Zaloguj się
+<% end %>
+<h2 class="header header--main visuallyhidden">Zaloguj się</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form'}) do |f| %>
+    <fieldset>
+        <legend>Formularz logowania</legend>
+        <div class="form__group required">
+            <%= f.label :email, 'Email', class: 'form__label' %>
+            <%= f.email_field :email, class: 'form__text', placeholder: ' ', autofocus: true, required: true %>
+        </div>
+        <div class="form__group required">
+            <%= f.label :password, 'Hasło', class: 'form__label' %>
+            <%= f.password_field :password, class: 'form__text', placeholder: ' ', autocomplete: 'off', required: true %>
+        </div>
+        <% if devise_mapping.rememberable? -%>
+        <div class="form__group text--center">
+            <%= f.check_box :remember_me, class: 'form__checkbox' %>
+            <%= f.label :remember_me, 'Zapamiętaj', class: 'inline m-r-15' %>
+        </div>
+        <% end -%>
+        <button class="form__submit" type="submit">Zaloguj</button>
+    </fieldset>
+<% end %>
+
+<%= render "devise/shared/links" %>
