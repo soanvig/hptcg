@@ -131,7 +131,7 @@ pl:
         placeholder: Wyszukaj tematy i posty.
     time_ago: "%{time} ago"
     topics:
-      delete_confirm: Jesteś pewien, że checsz usunąć ten temat? Tej operacji nie można cofnąć.
+      delete_confirm: Jesteś pewien, że chcesz usunąć ten temat? Tej operacji nie można cofnąć.
       delete_topic: Usuń temat
       deleted_notice: Temat usunięty.
       edit: Edytuj temat
