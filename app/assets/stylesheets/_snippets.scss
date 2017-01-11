@@ -123,3 +123,16 @@ $i: 1;
 {
     width: 50%;
 }
+
+.visible-xs
+{
+	display: none;
+}
+
+@media (max-width: 600px)
+{
+	.visible-xs
+	{
+		display: block;
+	}
+}
