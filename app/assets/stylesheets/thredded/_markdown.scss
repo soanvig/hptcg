@@ -1,0 +1,84 @@
+.thredded--post--content strong
+{
+    font-weight: bold;
+}
+
+.thredded--post--content em
+{
+    font-style: italic;
+}
+
+.thredded--post--content ul
+{
+    padding-left: 25px;
+    list-style: inside;
+    list-style-type: square;
+}
+
+.thredded--post--content ol
+{
+    padding-left: 25px;
+    list-style: inside;
+    list-style-type: decimal;
+}
+
+.thredded--post--content p
+{
+    margin-bottom: 20px;
+}
+
+.thredded--post--content h1
+{
+    font-size: 1.8em;
+}
+
+.thredded--post--content h2
+{
+    font-size: 1.55em;
+}
+
+.thredded--post--content h3,
+.thredded--post--content h4,
+.thredded--post--content h5,
+.thredded--post--content h6
+{
+    font-size: 1.3em;
+}
+
+.thredded--post--content a
+{
+    color: $gold;
+}
+
+.thredded--post--content a:hover,
+.thredded--post--content a:focus
+{
+    color: $gold-light;
+}
+
+.thredded--post--content code
+{
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #543f1c;
+    padding: 0px 7px;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.thredded--post--content pre code
+{
+    display: block;
+}
+
+.thredded--post--content table
+{
+    width: auto;
+}
+
+.thredded--post--content blockquote
+{
+    border-width: 3px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
