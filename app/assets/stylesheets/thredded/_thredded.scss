@@ -233,3 +233,20 @@
     display: block;
     margin-top: 15px;
 }
+
+.thredded--topic-header--follow-info form
+{
+    position:  static;
+}
+
+.thredded--user-navigation--private-topics--unread,
+.thredded--user-navigation--moderation--pending-count
+{
+    background: $gold-dark;
+    color: $white;
+}
+
+.thredded--moderated-notice
+{
+    background: $gold-dark;
+}
