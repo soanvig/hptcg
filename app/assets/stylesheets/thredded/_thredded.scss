@@ -162,7 +162,7 @@
     float: left;
 }
 
-.thredded--post:nth-of-type(odd)
+.thredded--post:nth-of-type(even)
 {
     float: right;
 }
@@ -170,6 +170,12 @@
 .thredded--post:nth-child(even) header
 {
     text-align: right;
+}
+
+.thredded--post:first-of-type
+{
+    float: none;
+    max-width: none;
 }
 
 .thredded--post-form--wrapper
