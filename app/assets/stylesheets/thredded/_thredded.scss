@@ -236,6 +236,7 @@
 
 .thredded--topic-header--follow-info form
 {
+<<<<<<< HEAD
     position: static !important;
     display: block;
 }
@@ -244,4 +245,19 @@
 {
     border-bottom: 1px solid $gold-dark;
     padding-bottom: 1rem;
+=======
+    position:  static;
+}
+
+.thredded--user-navigation--private-topics--unread,
+.thredded--user-navigation--moderation--pending-count
+{
+    background: $gold-dark;
+    color: $white;
+}
+
+.thredded--moderated-notice
+{
+    background: $gold-dark;
+>>>>>>> 3776ee2ac9672d53eb94a386fcfd6bc4dabcc604
 }
