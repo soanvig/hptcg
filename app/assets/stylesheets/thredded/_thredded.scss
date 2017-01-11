@@ -153,13 +153,28 @@
 .thredded--post header
 {
     margin-bottom: 10px;
-    padding-left: 20px;
+}
+
+.thredded--post
+{
+    max-width: 600px;
+    clear: both;
+    float: left;
+}
+
+.thredded--post:nth-of-type(odd)
+{
+    float: right;
 }
 
 .thredded--post:nth-child(even) header
 {
     text-align: right;
-    padding-right: 20px;
+}
+
+.thredded--post-form--wrapper
+{
+    clear: both;
 }
 
 .thredded--post--content
