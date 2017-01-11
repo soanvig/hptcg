@@ -1,0 +1,54 @@
+@media (max-width: 48rem)
+{
+	.thredded--user-navigation .thredded--user-navigation--settings a, 
+	.thredded--user-navigation .thredded--user-navigation--private-topics a, 
+	.thredded--user-navigation .thredded--user-navigation--moderation a,
+	.thredded--user-navigation--standalone a
+	{
+		margin: 0 7px;
+	}
+
+	.thredded--user-navigation
+	{
+		position: static;
+		text-align: center;
+	}
+
+	.thredded--main-navigation
+	{
+		margin-top: 10px;
+	}
+
+	.thredded--topics--topic
+	{
+		overflow: hidden;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.thredded--topics--follow-info
+	{
+		display: none;
+	}
+
+	.thredded--navigation-breadcrumbs
+	{
+		padding-right: 0 !important;
+		margin-bottom: 10px;
+	}
+
+	.thredded--navigation-breadcrumbs li
+	{
+		display: inline-block;
+	}
+
+	.thredded--navigation-breadcrumbs li a, 
+	{
+		padding: 0 !important;
+	}
+
+	.thredded--navigation-breadcrumbs li:not(:first-child) a
+	{
+		margin-left: 15px;
+	}
+}
