@@ -1,4 +1,4 @@
-<%= @topic.posts.order_newest_first.first.content %>
+<%= @topic.posts.last.content %>
 ---
 
 Ten e-mail został do Ciebie wysłany, ponieważ <%= @topic.user.thredded_display_name %> dołączył Cię do prywatnej konwersacji,
