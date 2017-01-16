@@ -1,0 +1,12 @@
+
+<blockquote><%= @topic.posts.order_newest_first.first.content %></blockquote>
+<hr />
+<p>
+    Ten e-mail został do Ciebie wysłany, ponieważ <%= @topic.user.thredded_display_name %> dołączył Cię do prywatnej konwersacji,
+    "<%= link_to @topic.title, @topic %>".
+    <%= link_to 'Kliknij tutaj', @topic %>, aby zobaczyć konwersację.
+</p>
+
+<p>
+    Aby wyłączyć takie powiadomienia, zaktualizuj swoje <%= link_to 'ustawienia', edit_preferences_url %>.
+</p>
