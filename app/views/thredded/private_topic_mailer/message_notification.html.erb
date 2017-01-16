@@ -1,5 +1,5 @@
 
-<blockquote><%= @topic.posts.order_newest_first.first.content %></blockquote>
+<blockquote><%= @topic.posts.order_newest_first.first.filtered_content(self) %></blockquote>
 <hr />
 <p>
     Ten e-mail został do Ciebie wysłany, ponieważ <%= @topic.user.thredded_display_name %> dołączył Cię do prywatnej konwersacji,
