@@ -1,19 +1,19 @@
 <% content_for :title do %>
-    Nowe hasło
+    New password
 <% end %>
-<h2 class="header header--main visuallyhidden">Nowe hasło</h2>
+<h2 class="header header--main visuallyhidden">New password</h2>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form' }) do |f| %>
   <%= devise_error_messages! %>
 
     <fieldset>
-        <legend>Prośba o nowe hasło</legend>
+        <legend>Ask for new password</legend>
         <div class="form__group required">
             <%= f.label :email, 'Email', class: 'form__label' %>
             <%= f.email_field :email, class: 'form__text', placeholder: ' ', autofocus: true, required: true %>
         </div>
 
-        <button class="form__submit" type="submit">Wyślij prośbę</button>
+        <button class="form__submit" type="submit">Send</button>
     </fieldset>
 <% end %>
 

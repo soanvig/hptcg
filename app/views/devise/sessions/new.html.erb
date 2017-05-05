@@ -1,26 +1,26 @@
 <% content_for :title do %>
-    Zaloguj się
+    Log in
 <% end %>
-<h2 class="header header--main visuallyhidden">Zaloguj się</h2>
+<h2 class="header header--main visuallyhidden">Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form'}) do |f| %>
     <fieldset>
-        <legend>Formularz logowania</legend>
+        <legend>Log in form</legend>
         <div class="form__group required">
             <%= f.label :email, 'Email', class: 'form__label' %>
             <%= f.email_field :email, class: 'form__text', placeholder: ' ', autofocus: true, required: true %>
         </div>
         <div class="form__group required">
-            <%= f.label :password, 'Hasło', class: 'form__label' %>
+            <%= f.label :password, 'Password', class: 'form__label' %>
             <%= f.password_field :password, class: 'form__text', placeholder: ' ', autocomplete: 'off', required: true %>
         </div>
         <% if devise_mapping.rememberable? -%>
         <div class="form__group text--center">
             <%= f.check_box :remember_me, class: 'form__checkbox' %>
-            <%= f.label :remember_me, 'Zapamiętaj', class: 'inline m-r-15' %>
+            <%= f.label :remember_me, 'Remember me', class: 'inline m-r-15' %>
         </div>
         <% end -%>
-        <button class="form__submit" type="submit">Zaloguj</button>
+        <button class="form__submit" type="submit">Log in</button>
     </fieldset>
 <% end %>
 

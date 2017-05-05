@@ -2,11 +2,10 @@
 <blockquote><%= @topic.posts.order_newest_first.first.content %></blockquote>
 <hr />
 <p>
-    Ten e-mail został do Ciebie wysłany, ponieważ <%= @topic.user.thredded_display_name %> dołączył Cię do prywatnej konwersacji,
-    "<%= link_to @topic.title, @topic %>".
-    <%= link_to 'Kliknij tutaj', @topic %>, aby zobaczyć konwersację.
+    This e-mail was sent to You, because <%= @topic.user.thredded_display_name %> joined you to his private conversation "<%= link_to @topic.title, @topic %>".
+    <%= link_to 'Click here', @topic %>, to see the conversation.
 </p>
 
 <p>
-    Aby wyłączyć takie powiadomienia, zaktualizuj swoje <%= link_to 'ustawienia', edit_preferences_url %>.
+    To turn off such notifications, update your <%= link_to 'preferences', edit_preferences_url %>.
 </p>

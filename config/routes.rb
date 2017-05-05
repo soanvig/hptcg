@@ -17,5 +17,9 @@ Rails.application.routes.draw do
     get '/o-grze'           => 'pages#show', page: 'game'
     get '/zasady'           => 'pages#show', page: 'rules'
     get '/handel'           => 'pages#show', page: 'trade'
+    # get '/:page'            => 'pages#show'
+
+    get '/contact'          => 'contact#form'
+    post '/contact'         => 'contact#mail'
     get '/:page'            => 'pages#show'
 end

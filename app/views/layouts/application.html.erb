@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title><%= yield(:title) + ' - ' if content_for?(:title) %>Harry Potter Trading Card Game</title>
-        <meta name="description" content="Strona poświęcona grze karcianej Harry Potter Trading Card Game. Twoje kompedium wiedzy na temat gry i społeczność, do której możesz należeć i Ty!">
+        <meta name="description" content="Harry Potter Trading Card Game dedicated page. Your compendium about the game, and community which You can be part of!">
         <meta name="robots" content="index, follow">
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
@@ -32,8 +32,8 @@
         <header class="page-header">
             <p class="page-title <%= 'visuallyhidden' if @page != 'index' %>">
                 <a class="nohover" href="/" <%= '' if @page != 'index' %>>
-                    <span class="block">Ulica</span>
-                    <span class="block">Pokątna</span>
+                    <span class="block">Diagon</span>
+                    <span class="block">Alley</span>
                 </a>
             </p>
             <div class="page-bar">
@@ -42,34 +42,34 @@
                 <nav class="menu__wrapper">
                     <ul class="menu">
                         <li class="menu__item">
-                            <a href="/">Strona główna</a>
+                            <a href="/">Main page</a>
                         </li>
                         <li class="menu__item">
-                            <a href="/o-grze">Gra</a>
+                            <a href="/game">The Game</a>
                             <ul class="submenu" aria-expanded="false">
                                 <li class="submenu__item">
-                                    <a href="/opis-gry">Opis gry</a>
+                                    <a href="/description">Game description</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/jak-zaczac">Jak zacząć?</a>
+                                    <a href="/how-to-begin">How to begin?</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/dodatki">Dodatki</a>
+                                    <a href="/extensions">Extensions</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/zasady">Zasady</a>
+                                    <a href="/rules">Rules</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/kolekcjonowanie">Kolekcjonowanie</a>
+                                    <a href="/collect">Collect</a>
                                 </li>
                                 <li class="submenu__item">
-                                    <a href="/spis-kart">Spis kart</a>
+                                    <a href="/cardlist">Card list</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu__item"><a href="/spolecznosc">Społeczność</a>
+                        <li class="menu__item"><a href="/community">Community</a>
                             <ul class="submenu" aria-expanded="false">
-                                <li class="submenu__item"><a href="/handel">Handel</a>
+                                <li class="submenu__item"><a href="/trade">Trade</a>
                                 </li>
                                 <li class="submenu__item"><a href="/forum">Forum</a>
                                 </li>
@@ -78,7 +78,7 @@
                         <li class="menu__item visible-xs">
                             <a href="/forum">Forum</a>
                         </li>
-                        <li class="menu__item"><a href="/kontakt">Kontakt</a>
+                        <li class="menu__item"><a href="/contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -101,10 +101,13 @@
             <%= yield %>
 
             <footer class="page-footer text--smallest p-t-15">
-                <p class="no-indent text--center text--smaller m-b-5">Copyright Schizohatter, 2016</p>
-                <p class="text--smallest no-indent text--center m-b-10">Nazwa <span class="italic">Harry Potter Trading Card Game</span> jest znakiem handlowym Wizards of the Coast.
-                    <br>Nazwa <span class="italic">Ulica Pokątna</span> jest znakiem handlowym J.K. Rowling oraz Warner Bros. Entertainment Inc.</p>
-                <p class="no-indent text--smallest m-b-10 text--center">Część materiałów na tej stronie pochodzi z lub jest wzorowana na materiałach ze strony <a href="http://tcg-harry-potter.republika.pl/">http://tcg-harry-potter.republika.pl</a>, która jest <span class="underline">nieaktywna od kilku lat</span>.</p>
+                <p class="no-indent text--center text--smaller m-b-5">Copyright <a href="http://207.154.196.99/">Schizohatter</a>, since 2016</p>
+                <p class="text--smallest no-indent text--center m-b-10">
+                    The name <span class="italic">Harry Potter Trading Card Game</span> is trademark of Wizards of the Coast.
+                    <br>
+                    The name <span class="italic">Diagon Alley</span> is trademark of J.K. Rowling and Warner Bros. Entertainment Inc.
+                </p>
+                <p class="no-indent text--smallest m-b-10 text--center">Some part of materials come from or is based on <a href="http://tcg-harry-potter.republika.pl/">http://tcg-harry-potter.republika.pl</a>, which is <span class="underline">inactive for few years</span>.</p>
             </footer>
         </main>
 

@@ -1,11 +1,9 @@
 <%= @topic.posts.order_newest_first.first.content %>
 ---
 
-Ten e-mail został do Ciebie wysłany, ponieważ <%= @topic.user.thredded_display_name %> dołączył Cię do prywatnej konwersacji,
-"<%= link_to @topic.title, @topic %>".
-Kliknij tutaj, aby zobaczyć konwersację:
-<%= url_for @topic %>
+This e-mail was sent to You, because <%= @topic.user.thredded_display_name %> joined you to his private conversation "<%= link_to @topic.title, @topic %>".
+Click here to see the conversation: <%= url_for @topic %>
 
-Aby wyłączyć takie powiadomienia, zaktualizuj swoje ustawienia:
+To turn off such notifications, update your preferences:
 <%= edit_preferences_url %>
 
