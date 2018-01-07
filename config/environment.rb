@@ -10,6 +10,6 @@ ActionMailer::Base.smtp_settings = {
     :domain => 'https://hptcg.eu',
     :address => 'in-v3.mailjet.com',
     :port => 587,
-    :authentication => :plain,
+    :authentication => :cram_md5,
     :enable_starttls_auto => true
 }
