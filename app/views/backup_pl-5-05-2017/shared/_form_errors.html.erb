@@ -1,9 +1,0 @@
-<% if target %>
-    <% if target.errors.any? %>
-        <ul class="list--ordered">
-            <% target.errors.messages.each do |msg| %>
-                <li><%= msg[0] %> <%= msg[1][0] %></li>
-            <% end %>
-        </ul>
-    <% end %>
-<% end %>

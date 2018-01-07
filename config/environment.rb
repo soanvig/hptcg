@@ -7,8 +7,8 @@ Rails.application.initialize!
 ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_USER'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => '207.154.196.99',
-    :address => 'smtp.sendgrid.net',
+    :domain => 'https://hptcg.eu',
+    :address => 'in-v3.mailjet.com',
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true

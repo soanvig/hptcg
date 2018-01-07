@@ -1,5 +1,5 @@
 class Mailer < ApplicationMailer
-    default :from => 'contact@hptcg.pl'
+    default :from => 'no-reply@hptcg.eu'
 
     def contact_email(email)
         @email = email
